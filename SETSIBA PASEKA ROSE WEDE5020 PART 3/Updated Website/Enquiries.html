@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries and Orders | Sweet Bakery</title>
+    <meta name="description" content="Contact Sweet Bakery with questions or place an order.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sweet Bakery</h1>
+    <p>Freshly baked with love</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="About us.html">About Us</a>
+    <a href="Contact us.html">Contact Us</a>
+    <a href="Enquiries.html">Enquiries</a>
+</nav>
+
+<main class="form-container">
+
+    <section class="form-section">
+        <h2>Customer Enquiry Form</h2>
+        <p>Complete the form below if you have a question.</p>
+
+        <form id="enquiryForm" novalidate>
+
+            <div class="form-group">
+                <label for="enquiryName">Full Name</label>
+                <input type="text" id="enquiryName" placeholder="Enter your full name">
+                <small id="enquiryNameError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryEmail">Email Address</label>
+                <input type="email" id="enquiryEmail" placeholder="example@email.com">
+                <small id="enquiryEmailError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryPhone">Phone Number</label>
+                <input type="text" id="enquiryPhone" placeholder="Enter your phone number">
+                <small id="enquiryPhoneError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryCategory">Enquiry Category</label>
+                <select id="enquiryCategory">
+                    <option value="">Select a category</option>
+                    <option value="Products">Products</option>
+                    <option value="Prices">Prices</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="Custom Orders">Custom Orders</option>
+                    <option value="Other">Other</option>
+                </select>
+                <small id="enquiryCategoryError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="enquirySubject">Subject</label>
+                <input type="text" id="enquirySubject" placeholder="Enter your subject">
+                <small id="enquirySubjectError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryQuestion">Your Question</label>
+                <textarea id="enquiryQuestion" rows="5" placeholder="Write your question here"></textarea>
+                <small id="enquiryQuestionError" class="error-message"></small>
+            </div>
+
+            <button type="submit">Submit Enquiry</button>
+            <p id="enquirySuccess" class="success-message" role="status"></p>
+
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h2>Place an Order</h2>
+        <p>Complete the form below to request your bakery order.</p>
+
+        <form id="orderForm" novalidate>
+
+            <div class="form-group">
+                <label for="customerName">Customer Name</label>
+                <input type="text" id="customerName" placeholder="Enter your full name">
+                <small id="customerNameError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="orderPhone">Phone Number</label>
+                <input type="text" id="orderPhone" placeholder="Enter your phone number">
+                <small id="orderPhoneError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="product">Select Product</label>
+                <select id="product">
+                    <option value="">Select a product</option>
+                    <option>Bread</option>
+                    <option>Buns</option>
+                    <option>Rolls</option>
+                    <option>Cakes</option>
+                    <option>Cupcakes</option>
+                    <option>Muffins</option>
+                    <option>Cookies</option>
+                    <option>Biscuits</option>
+                    <option>Doughnuts</option>
+                    <option>Brownies</option>
+                    <option>Cheesecake</option>
+                    <option>Pie</option>
+                    <option>Sausage Rolls</option>
+                    <option>Pizza</option>
+                    <option>Croissants</option>
+                    <option>Cinnamon Rolls</option>
+                    <option>Tarts</option>
+                    <option>Scones</option>
+                </select>
+                <small id="productError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="1" max="1000" placeholder="Enter quantity">
+                <small id="quantityError" class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="information">Additional Information</label>
+                <textarea id="information" rows="4" placeholder="Add any special instructions (optional)"></textarea>
+            </div>
+
+            <button type="submit">Place Order</button>
+            <p id="orderSuccess" class="success-message" role="status"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Sweet Bakery. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

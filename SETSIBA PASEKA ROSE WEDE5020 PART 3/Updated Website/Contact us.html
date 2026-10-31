@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Sweet Bakery</title>
+
+    <meta name="description"
+          content="Contact Sweet Bakery for product information, prices, orders and customer support.">
+
+    <meta name="keywords"
+          content="Sweet Bakery, contact bakery, bakery orders, cakes, bread">
+
+    <meta name="author" content="Sweet Bakery">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p>
+        <a href="index.html">🏠 Back to Welcome Page</a>
+    </p>
+
+    <h1>🍰 SWEET BAKERY 🍰</h1>
+
+    <h2>CONTACT US</h2>
+
+    <nav>
+        <a href="index.html">Welcome</a> |
+        <a href="Products.html">Products</a> |
+        <a href="About us.html">About Us</a> |
+        <a href="Contact us.html">Contact Us</a> |
+        <a href="Enquiries.html">Enquiries</a>
+    </nav>
+
+    <hr>
+
+    <h3>Get In Touch With Us</h3>
+
+    <p>
+        We would love to hear from you!
+        Contact us for information about our products,
+        prices and orders.
+    </p>
+
+    <h3>Contact Information</h3>
+
+    <p>📞 <b>Phone:</b> 012 345 6789</p>
+    <p>📧 <b>Email:</b> sweetbakery@gmail.com</p>
+    <p>📍 <b>Location:</b> Polokwane, Limpopo</p>
+
+    <h3>Business Hours</h3>
+
+    <p>Monday - Friday: 08:00 - 17:00</p>
+    <p>Saturday: 08:00 - 14:00</p>
+    <p>Sunday: Closed</p>
+
+    <h3>Orders</h3>
+
+    <p>
+        Customers can contact us to ask about our products,
+        prices and availability before placing an order.
+    </p>
+
+    <hr>
+
+    <h3>Contact Form</h3>
+
+    <p>
+        Complete the form below and we will be happy to hear from you.
+    </p>
+
+    <form id="contactForm" novalidate>
+
+        <div class="form-group">
+
+            <label for="contactName">Full Name:</label>
+
+            <input
+                type="text"
+                id="contactName"
+                name="name"
+                minlength="2"
+                maxlength="100"
+                required
+                pattern="[A-Za-zÀ-ÿ]+([ '-][A-Za-zÀ-ÿ]+)*"
+                placeholder="Enter your full name"
+            >
+
+            <small id="contactNameError"
+                   class="error-message"></small>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="contactEmail">Email Address:</label>
+
+            <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                maxlength="254"
+                required
+                placeholder="Enter your email address"
+            >
+
+            <small id="contactEmailError"
+                   class="error-message"></small>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="contactType">Message Type:</label>
+
+            <select id="contactType" name="messageType" required>
+
+                <option value="">-- Select a message type --</option>
+                <option value="Product information">Product information</option>
+                <option value="Prices">Prices</option>
+                <option value="Order">Order</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+
+            </select>
+
+            <small id="contactTypeError"
+                   class="error-message"></small>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="contactMessage">Your Message:</label>
+
+            <textarea
+                id="contactMessage"
+                name="message"
+                rows="5"
+                minlength="10"
+                maxlength="1000"
+                required
+                placeholder="Write your message here"
+            ></textarea>
+
+            <small id="contactMessageError"
+                   class="error-message"></small>
+
+        </div>
+
+        <button type="submit">Submit Message</button>
+
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <p id="contactFeedback"
+       class="success-message"
+       role="status"
+       aria-live="polite"></p>
+
+    <hr>
+
+    <h3>Need Help?</h3>
+
+    <p>
+        If you have a specific question, you can also visit our
+        Enquiries page.
+    </p>
+
+    <a href="Enquiries.html">Go to Enquiries</a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

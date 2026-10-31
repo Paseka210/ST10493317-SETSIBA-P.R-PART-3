@@ -1,0 +1,298 @@
+
+/* SWEET BAKERY WEBSITE */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f2;
+    color: #4b3028;
+    line-height: 1.6;
+}
+
+/* Main headings */
+h1 {
+    text-align: center;
+    color: #9b4565;
+    font-size: 36px;
+    padding: 20px;
+}
+
+h2 {
+    color: #9b4565;
+    margin: 20px;
+}
+
+h3 {
+    color: #87445b;
+}
+
+/* Navigation menu */
+nav {
+    background-color: #9b4565;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe2b8;
+    text-decoration: underline;
+}
+
+/* Page links and content */
+body > p {
+    margin: 20px;
+}
+
+a {
+    color: #9b4565;
+}
+
+/* Lines */
+hr {
+    border: 0;
+    border-top: 2px solid #f0d5d9;
+    margin: 25px;
+}
+
+/* Product cards */
+.product {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    margin: 15px;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #f0d5d9;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(80, 40, 40, 0.08);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.product button {
+    width: 100%;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #9b4565;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 16px;
+    margin: 5px 3px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #713149;
+}
+
+/* Product search */
+#productSearch {
+    width: 90%;
+    max-width: 450px;
+    padding: 12px;
+    margin-left: 20px;
+    border: 1px solid #d9a9b8;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Shopping cart */
+#cartItems,
+#cartCount,
+#cartTotal {
+    margin-left: 20px;
+}
+
+#cartTotal {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Forms */
+form {
+    width: calc(100% - 30px);
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #f0d5d9;
+    border-radius: 12px;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #d9a9b8;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    width: 100%;
+}
+
+/* Form labels and groups */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+}
+
+/* ERROR MESSAGES UNDER EACH FIELD */
+.error-message {
+    display: block;
+    color: #b00020;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Red border when the answer is incorrect */
+.input-error {
+    border: 2px solid #b00020 !important;
+    background-color: #fff7f7;
+}
+
+/* Green border when the answer is correct */
+.input-success {
+    border: 2px solid #276738 !important;
+}
+
+/* Successful form submission message */
+.success-message {
+    color: #276738;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Small welcome message */
+.welcome-message {
+    display: none;
+    background-color: #f8dce5;
+    color: #713149;
+    border: 1px solid #d9a9b8;
+    border-radius: 10px;
+    padding: 12px 18px;
+    margin: 15px 20px;
+    max-width: 450px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE DESIGN FOR ALL PAGES */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    nav {
+        padding: 12px;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 2px;
+    }
+
+    .product {
+        display: block;
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+        max-height: 240px;
+        object-fit: cover;
+    }
+
+    form {
+        width: calc(100% - 30px);
+        margin: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}

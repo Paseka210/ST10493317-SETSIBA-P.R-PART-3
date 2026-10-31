@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Bakery - Products</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p>
+        <a href="index.html">🏠 Back to Welcome Page</a>
+       
+    </p>
+
+    <h1>🍰 SWEET BAKERY</h1>
+
+    <h2>OUR PRODUCTS</h2>
+
+    <nav>
+        <a href="Index.html">Welcome</a> |
+        <a href="Products.html">Products</a> |
+        <a href="About us.html">About Us</a> |
+        <a href="Contact us.html">Contact Us</a> |
+        <a href="Enquiries.html">Enquiries</a>
+    </nav>
+
+    <hr>
+
+    <h2>Search Our Products</h2>
+
+    <input type="text" id="productSearch"
+        placeholder="Type a product name...">
+
+    <p id="searchMessage"></p>
+
+  <h2>🛒 Shopping Cart</h2>
+   <p id="cartCount">Items in cart: 0</p>
+   <p id="cartTotal">Total: R0.00</p>
+   <div id="cartItems"></div>
+<hr>
+
+    
+<div class="product">
+    <h3>1. 🍞 Bread</h3>
+    <img src="images/bread.jpg" width="250" height="180"
+         alt="Fresh bread" loading="lazy">
+    <p>Price: R15.00</p>
+    <p>Freshly baked bread. Start your day with something warm and delicious.</p>
+    <button onclick="addToCart('Bread', 15)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>2. 🥯 Buns</h3>
+    <img src="images/buns.jpg" width="250" height="180"
+         alt="Fresh buns" loading="lazy">
+    <p>Price: R18.00</p>
+    <p>Fresh buns, happy moments.</p>
+    <button onclick="addToCart('Buns', 18)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>3. 🥖 Rolls</h3>
+    <img src="images/rolls.jpg" width="250" height="180"
+         alt="Fresh rolls" loading="lazy">
+    <p>Price: R25.00</p>
+    <p>Fresh from the oven, ready to brighten your day.</p>
+    <button onclick="addToCart('Rolls', 25)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>4. 🎂 Cakes</h3>
+    <img src="images/cakes.jpg" width="250" height="180"
+         alt="Freshly baked cakes" loading="lazy">
+    <p>Price: R50.00</p>
+    <p>Made with love to make your special moments sweeter.</p>
+    <button onclick="addToCart('Cakes', 50)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>5. 🍩 Doughnuts</h3>
+    <img src="images/doughnuts.jpg" width="250" height="180"
+         alt="Fresh doughnuts" loading="lazy">
+    <p>Price: R20.00</p>
+    <p>Fresh and delicious doughnuts made to brighten your day.</p>
+    <button onclick="addToCart('Doughnuts', 20)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>6. 🥧 Pie</h3>
+    <img src="images/pie.jpg" width="250" height="180"
+         alt="Freshly baked pie" loading="lazy">
+    <p>Price: R25.00</p>
+    <p>Fresh and delicious pies with a tasty filling.</p>
+    <button onclick="addToCart('Pie', 25)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>7. 🍕 Pizza</h3>
+    <img src="images/pizza.jpg" width="250" height="180"
+         alt="Freshly baked pizza" loading="lazy">
+    <p>Price: R60.00</p>
+    <p>Freshly baked with delicious toppings and lots of love.</p>
+    <button onclick="addToCart('Pizza', 60)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>8. 🥧 Tarts</h3>
+    <img src="images/tarts.jpg" width="250" height="180"
+         alt="Sweet tarts" loading="lazy">
+    <p>Price: R30.00</p>
+    <p>Fresh and delicious sweet tarts. Sweeten your day with a fresh tart.</p>
+    <button onclick="addToCart('Tarts', 30)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>9. 🌭 Sausage Rolls</h3>
+    <img src="images/sausage-rolls.jpg" width="250" height="180"
+         alt="Fresh sausage rolls" loading="lazy">
+    <p>Price: R15.00</p>
+    <p>Crispy outside, delicious inside. Freshly baked sausage rolls made with care and love.</p>
+    <button onclick="addToCart('Sausage Rolls', 15)">Add to Cart</button>
+</div>
+
+<div class="product">
+    <h3>10. 🍪 Cookies</h3>
+    <img src="images/cookies.jpg" width="250" height="180"
+         alt="Freshly baked cookies" loading="lazy">
+    <p>Price: R20.00</p>
+    <p>Fresh and crunchy cookies. Sweet treats make every day better.</p>
+    <button onclick="addToCart('Cookies', 20)">Add to Cart</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
